@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>uthaya's Survey Form</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="title">uthaya's Survey Form</h1>
+        <p id="description">Thank you for teaching the html and css</p>
+        <section>
+            <form id="survey-form">
+                <fieldset>
+              <label for="name" id="name-label">Enter Your Name <input id="name" required placeholder="name"></label>
+              <label id="email-label" for="email">Enter your email<input id="email" type="email" placeholder="email" required></label>
+              <label id="number-label" for="number">enter your age <input id="number" type="number" placeholder="age" min="13" max="120"></label>
+              </fieldset>
+              <fieldset class="tick">
+                  <legend>Would you recommand it to your friends</legend>
+                   <label for="maybe"> Maybe <input type="radio" value="maybe" name="maybe-definitely-notsure" class="inline"></label>
+                   <label for="definitely"> Definitely <input type="radio" value="definitely" name="maybe-definitely-notsure" class="inline"></label>
+                   <label for="notsure"> Not Sure <input type="radio" value="notsure" name="maybe-definitely-notsure" class="inline"></label>
+                   </fieldset>
+                   <fieldset>
+              <label for="dropdown">Which College you are from?<select id="dropdown">
+                   <option value="">(select)</option>
+                    <option value="1">VRSCET</option>
+                     <option value="2">MIT</option>
+                      <option value="3">IIT</option>
+                       <option value="4">SRM</option>
+                      
+              </select>
+              <legnd>Skills you learned here</legend>
+              <label for="html"><input type="checkbox" value="html" class="inline"> HTML</label>
+              <label for="css"><input type="checkbox" value="css" class="inline"> CSS</label>
+              <label for="feedback">Feedback <textarea id="feedback" name="bio" rows="3" cols="30" placeholder="Love learning here"></textarea></label>
+              </fieldset>
+              <input id="submit" type="submit" value="submit">
+            </form>
+        </section>
+    </body>
+</html>
